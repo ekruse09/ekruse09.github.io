@@ -67,9 +67,11 @@
 
         footer {
             margin-top: 20px;
-            text-align: center;
+            text-align: left; /* Align text to the left */
             color: #7f8c8d;
-        } /* New styles for icons */
+        } 
+        
+        /* New styles for icons */
         .icon {
             margin-right: 5px;
             width: 20px; /* Adjust the width to your preference */
@@ -107,13 +109,10 @@
             color: #3498db; /* Set link color to a specific color */
         }
 
-        /* Updated style for UWM logo */
-        .uwm-logo {
-            max-width: 100px; /* Adjust the width to your preference */
-            height: auto;
-            float: right;
-            margin-top: -20px;
-            margin-left: 10px;
+        /* Back button styles */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 10px; /* Add some spacing below the back button */
         }
 
         /* Clearfix to prevent content overlap */
@@ -138,8 +137,6 @@
         <h2>EDUCATION</h2>
         <p>University of Wisconsin-Milwaukee, Milwaukee, WI<br> Bachelor of Science: Computer Engineering<br>
             Expected Graduation: May 2024<br> GPA: 3.69/4.00</p>
-        <!-- Add UWM logo to the right -->
-        <img class="uwm-logo" src="https://uwm.edu/r2d2/wp-content/uploads/sites/438/2021/05/UWM-logo.png" alt="UWM Logo">
     </section>
     
     <section class="coursework">
@@ -200,13 +197,14 @@
         </ul>
     </section>
 
+    <!-- Back button in the top left corner -->
+    <p class="back-button"><a href="index.html">&lt; Back to Homepage</a></p>
+
     <!-- Clearfix to prevent content overlap -->
     <div class="clearfix"></div>
 
-    <p><a href="index.html">Go back to Homepage</a></p>
-
     <footer>
-        <p>&copy; 2023 Elijah Kruse | Website created using HTML, GitHub Pages, and ChatGPT 3.5</p>
+        <p>&copy; 2023 Elijah Kruse</p>
     </footer>
 </body>
 </html>
