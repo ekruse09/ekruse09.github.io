@@ -6,6 +6,7 @@
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
     <title>Education - EJ Kruse</title>
     <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.lYVcb5ecaNICpKYpK6TzSQHaHw?rs=1&pid=ImgDetMain">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500|Roboto+Slab:300,400,700|Source+Sans+Pro:200,300,400,600,700,900&display=swap" rel="stylesheet" type="text/css">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -40,11 +41,14 @@
             margin-top: 20px;
         }
 
+        h2, h3 {
+            margin-bottom: 10px;
+        }
+
         h2 {
             color: #3498db;
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
-            margin-bottom: 10px;
         }
 
         h3 {
@@ -52,7 +56,7 @@
             margin-bottom: 5px;
         }
 
-        ul {
+        ul, li {
             list-style-type: none;
             padding: 0;
         }
@@ -61,81 +65,59 @@
             margin-bottom: 5px;
         }
 
-        .project-description,
-        .work-experience-description {
+        .project-description, .work-experience-description {
             margin-bottom: 10px;
         }
 
         footer {
             margin-top: 20px;
-            text-align: center; /* Align text to the center */
+            text-align: center;
             color: #7f8c8d;
-        } 
-        
-        /* New styles for icons */
+        }
+
         .icon {
             margin-right: 5px;
-            width: 20px; /* Adjust the width to your preference */
+            width: 20px;
             height: auto;
         }
 
-        .icon-list {
-            list-style-type: none;
-            padding: 0;
+        .icon-list, .coursework ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 10px;
         }
 
-        .icon-list li {
+        .icon-list li, .coursework li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center; /* Align items vertically */
+            align-items: center;
         }
 
-        /* New styles for coursework */
-        .coursework {
+        .coursework, .back-button {
             margin-top: 5px;
         }
 
-        .coursework ul {
-            list-style-type: disc; /* Use 'disc' for bullet points */
-            padding-left: 20px; /* Adjust indentation as needed */
-            margin-bottom: 10px;
+        .coursework a, .cs-link {
+            text-decoration: none;
+            color: #3498db;
         }
 
-        .coursework li {
-            margin-bottom: 5px;
-        }
-
-        .coursework a {
-            text-decoration: none; /* Remove default link styling */
-            color: #3498db; /* Set link color to a specific color */
-        }
-
-        /* Back button styles */
         .back-button {
             display: inline-block;
-            margin-bottom: 10px; /* Add some spacing below the back button */
-            margin-top: -20px; /* Adjust the top margin to move it up */
+            margin-bottom: 10px;
+            margin-top: -20px;
         }
 
-        /* Clearfix to prevent content overlap */
         .clearfix::after {
             content: "";
             clear: both;
             display: table;
         }
 
-        /* New styles for the transcript link */
-        .transcript-link {
+        .transcript-link, .cs-link {
             color: #000;
         }
-
-        .cs-link {
-        color: #000; /* Black color */
-        text-decoration: none; /* Remove underline */
-    }
-        
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500|Roboto+Slab:300,400,700|Source+Sans+Pro:200,300,400,600,700,900&display=swap" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -151,7 +133,7 @@
     
         <p> 
             <strong>University of Wisconsin - Milwaukee</strong> 
-            <img style="margin-top: 6px;" src="https://th.bing.com/th/id/R.7036060f1822c9826505352cd6ad3bb9?rik=Gj48xNzc4RuB%2bA&riu=http%3a%2f%2fwww.logotypes101.com%2flogos%2f977%2f12EE8D27250E70D1ADF4DDA691EB39F0%2fUniversity_of_WisconsinMilwaukee.png&ehk=lAXvWM0JMgqZZcmVKvVruV3tqObfcfPeOLiLdxL60x0%3d&risl=&pid=ImgRaw&r=0" alt="UWM Icon" width="20" height="20"> <!-- Replace with actual icon -->
+            <img style="margin-top: 6px;" src="https://th.bing.com/th/id/R.7036060f1822c9826505352cd6ad3bb9?rik=Gj48xNzc4RuB%2bA&riu=http%3a%2f%2fwww.logotypes101.com%2flogos%2f977%2f12EE8D27250E70D1ADF4DDA691EB39F0%2fUniversity_of_WisconsinMilwaukee.png&ehk=lAXvWM0JMgqZZcmVKvVruV3tqObfcfPeOLiLdxL60x0%3d&risl=&pid=ImgRaw&r=0" alt="UWM Icon" width="20" height="20">
             <br>
             Bachelor of Science: Computer Engineering
             <br>
@@ -164,7 +146,7 @@
     
         <p> 
             <strong>University of Wisconsin - Eau Claire</strong>  
-            <img style="margin-top: 3px;" src="https://cdn.uwec.edu/athena/images/8934/Blugold_E_RGB-1-four-three.png" alt="UWEC Icon" width="20" height="20"> <!-- Replace with actual icon -->
+            <img style="margin-top: 3px;" src="https://cdn.uwec.edu/athena/images/8934/Blugold_E_RGB-1-four-three.png" alt="UWEC Icon" width="20" height="20">
             <br>
             Dates of Attendance: September 2020 - May 2021
             <br> 
@@ -175,7 +157,7 @@
     
         <p> 
             <strong>Kimberly High School</strong>  
-            <img style="margin-top: 4px;" src="https://th.bing.com/th/id/OIP.uQdpbhP_mSR4h4g0ii0MowAAAA?rs=1&pid=ImgDetMain" alt="Kimberly HS Icon" width="20" height="20"> <!-- Replace with actual icon -->
+            <img style="margin-top: 4px;" src="https://th.bing.com/th/id/OIP.uQdpbhP_mSR4h4g0ii0MowAAAA?rs=1&pid=ImgDetMain" alt="Kimberly HS Icon" width="20" height="20">
             <br>
             Graduation: May 2020
             <br> 
@@ -187,7 +169,6 @@
         </p>
 
         <br>
-        
     </section>
     
     <section class="coursework">
@@ -195,7 +176,6 @@
     
         <h3><a href="https://catalog.uwm.edu/courses/compsci/" target="_blank" class="cs-link">Computer Science (CS)</a></h3>
             <ul>
-                <!-- CS courses without individual links -->
                 <li>CS 317: Discrete Information Structures</li>
                 <li>CS 337: System Programming</li>
                 <li>CS 351: Data Structures and Algorithms</li>
@@ -211,11 +191,9 @@
                 <li>CS 657: Introduction to Cybersecurity</li>
             </ul>
     
-        <!-- Link to the Electrical Engineering course catalog -->
         <h3><a href="https://catalog.uwm.edu/courses/eleceng/" target="_blank" class="cs-link">Electrical Engineering (EE)</a></h3>
     
             <ul>
-                <!-- EE courses without individual links -->
                 <li>EE 301: Electrical Circuits I</li>
                 <li>EE 305: Electrical Circuits II</li>
                 <li>EE 310: Signals and Systems</li>
@@ -225,17 +203,14 @@
                 <li>EE 457: Digital Logic Laboratory</li>
             </ul>
 
-        <!-- Link to the Industrial and Manufacturing Engineering course catalog -->
         <h3><a href="https://catalog.uwm.edu/courses/ind_eng/" target="_blank" class="cs-link">Industrial and Manufacturing Engineering (ME)</a></h3>
     
             <ul>
-                <!-- ME courses without individual links -->
                 <li>ME 367: Introductory Statistics for Engineering</li>
                 <li>ME 572: Reliability Engineering</li>
             </ul>
 
         <br>
-        
     </section>
     
     <section>
@@ -256,17 +231,13 @@
             <li><img src="https://th.bing.com/th/id/R.3d490d1550fe485b9246162bd49ba1b2?rik=XwDFoXzW2y7RYw&riu=http%3a%2f%2fwww.stockspinoffs.com%2fwp-content%2fuploads%2f2014%2f02%2fITW-Logo.png&ehk=E0qhJU9d3phxPJ4l8Hgp2FVlWiOMCGK2hTCKL%2b93gV4%3d&risl=&pid=ImgRaw&r=0" alt="Icon" class="icon"> Robert W. Beart Memorial Award (2021)</li>
             <li><img src="https://cdn.uwec.edu/athena/images/8934/Blugold_E_RGB-1-four-three.png" alt="Icon" class="icon"> Diversity Achievement Award (2020)</li>
             <li><img src="https://cdn.uwec.edu/athena/images/8934/Blugold_E_RGB-1-four-three.png" alt="Icon" class="icon"> Freshman Honors Scholarship (2020)</li>
-            <!-- Add other academic honors similarly -->
         </ul>
 
         <br>
-        
     </section>
 
-    <!-- Back button in the top left corner -->
     <p class="back-button"><a href="index.html">&lt; Back to Homepage</a></p>
 
-    <!-- Clearfix to prevent content overlap -->
     <div class="clearfix"></div>
     
     <footer>
