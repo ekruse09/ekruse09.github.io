@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +41,8 @@
             margin-top: 20px;
         }
 
-        h2 {
+        h2,
+        h3 {
             color: #3498db;
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
@@ -66,47 +68,46 @@
             text-align: center;
             color: #7f8c8d;
         }
-        
-        /* New styles for icons */
+
         .icon {
             margin-right: 5px;
-            width: 20px; /* Adjust the width to your preference */
+            width: 20px;
             height: auto;
         }
 
-        .icon-list {
+        .icon-list,
+        .project-links {
             list-style-type: none;
             padding: 0;
         }
 
-        .icon-list li {
+        .icon-list li,
+        .project-links li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center; /* Align items vertically */
+            align-items: center;
         }
 
-        /* Back button styles */
         .back-button {
             display: inline-block;
-            margin-bottom: 10px; /* Add some spacing below the back button */
-            margin-top: -20px; /* Adjust the top margin to move it up */
+            margin-bottom: 10px;
+            margin-top: -20px;
         }
 
-        .project-links {
+        .project-links a {
             text-decoration: none;
-            color: inherit; /* To inherit the color from the parent */
-        }        
+            color: inherit;
+        }
 
-        /* Clearfix to prevent content overlap */
         .clearfix::after {
             content: "";
             clear: both;
             display: table;
-        }  
-        
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500|Roboto+Slab:300,400,700|Source+Sans+Pro:200,300,400,600,700,900&display=swap" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <img src="https://media.licdn.com/dms/image/D5603AQGWT5hYPqpp8A/profile-displayphoto-shrink_800_800/0/1699899376650?e=1709164800&v=beta&t=pj1voNXfAy1BNxmhEWijtYJIyWwP4WLYdFPi4GA1wlY" alt="Profile Picture" width="150">
@@ -117,298 +118,264 @@
     </header>
 
     <section>
-    <h2>PROJECTS</h2>
+        <h2>PROJECTS</h2>
 
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/OIP.YKvFSocKFQaoo-56XlWNMwHaHa?rs=1&pid=ImgDetMain" alt="Website Icon"> Personal Website (2023 - present)
-        </h3>
-        <ul class="project-description">
+        <section>
+            <!-- Website Project (2023) -->
+            <h3>
+                <img class="icon" src="https://th.bing.com/th/id/OIP.YKvFSocKFQaoo-56XlWNMwHaHa?rs=1&pid=ImgDetMain" alt="Website Icon"> Personal Website (2023 - present)
+            </h3>
+            <ul class="project-description">
+                <p>
+                    Designed and developed a personal website showcasing my portfolio, projects, and professional experience.
+                    The website provides an interactive and responsive user interface using HTML, CSS, and JavaScript.
+                </p>
+            </ul>
+
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> HTML, CSS, JavaScript, Web Design, Frontend Development</li>
+            </ul>
+
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://th.bing.com/th/id/R.e42cedba9941196598486f6d6db92d4c?rik=QLNOXCmIQafvCg&pid=ImgRaw&r=0" alt="Website Icon"><a href="https://ekruse09.github.io/index.html" target="_blank" class="project-links">Website</a></li>
+            </ul>
+        </section>
+
+        <br>
+
+        <section>
+            <!-- Weather Application Project (2023) -->
+            <h3>
+                <img class="icon" src="https://th.bing.com/th/id/OIP.YKvFSocKFQaoo-56XlWNMwHaHa?rs=1&pid=ImgDetMain" alt="Weather Icon"> Weather Application Design Project (2023 - present)
+            </h3>
+            <ul class="project-description">
+                <p>
+                    Collaborated with team members with the goal of creating a personalized travel weather application.
+                    The primary objectives were to automate weather predictions, enhance data management, and implement user-friendly features.
+                    This initiative addresses the challenges of accurate and accessible weather information, providing real-time forecasts and personalized travel planning features for a more tailored weather experience.
+                </p>
+            </ul>
+
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Python, Backend Development, Database Management, User Interface Design, Collaborative Design, Personalized Application Development</li>
+            </ul>
+
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://1drv.ms/p/s!ArCrb2sf9wrYgt1xcRXyvl_P_sqkzg" target="_blank" class="project-links">Final Preparation Presentation</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </section>
+
+        <br>
+
+        <section>
+            <!-- TA Scheduler App Project (2023) -->
+            <h3>
+                <img class="icon" src="https://th.bing.com/th/id/R.50c28a69e0db8c3ad35b535483d469b2?rik=hozneXi3fPLd2Q&riu=http%3a%2f%2fgetdrawings.com%2fvectors%2fschedule-icon-vector-15.png&ehk=txYoZtmMn8RFoiU6MTOQr6z6hmIrGJfdKbHsn9cAttk%3d&risl=&pid=ImgRaw&r=0" alt="Schedule Icon"> TA Scheduling Application (2023)
+            </h3>
+            <ul class="project-description">
+                <p>
+                    Contributed significantly to the backend Python development and testing in a collaborative project focused on creating a TA scheduling application.
+                    The goal was to automate course assignments, enhance contact information management, and implement role-based access controls.
+                    The TA scheduling app initiative addresses the challenges of managing graduate student TAs, their course assignments, and contact information.
+                </p>
+            </ul>
+
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Python, Backend Development, Database Management, Role-Based Access Control, Collaborative Design</li>
+            </ul>
+
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/28/28884.png" alt="Python Document Icon"><a href="https://1drv.ms/f/s!ArCrb2sf9wrYgt0XBgKF9-cYCfCRxg" target="_blank" class="project-links">Our Code</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </section>
+
+        <br>
+
+        <section>
+            <!-- LED Safety Light Design Project (2023) -->
+            <h3>
+                <img class="icon" src="https://cdn0.iconfinder.com/data/icons/construction-2-22/65/65-4096.png" alt="Safety Light Icon"> LED Safety Light Design Project (2023)
+            </h3>
+            <ul class="project-description">
+                <p>
+                    Collaborated on the engineering of an analog circuit with peers, creating a safety light that blinked an LED at a specific duty cycle in light and activated fully at night.
+                    The goal was to design a light sensor switch with a blinking LED circuit indicator, considering factors such as cost, size, and power efficiency.
+                    The design process involved creating an astable multivibrator circuit, adjusting resistors and capacitors to control duty cycle and blinking frequency, and addressing challenges like achieving the required minimum current output.
+                    The project showcased strengths and weaknesses in real-life applications.
+                </p>
+            </ul>
+
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Collaborative Design, Analog Circuit Design, Component Analysis, LTSpice Simulation, PCB Design</li>
+            </ul>
+
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/w/s!ArCrb2sf9wrYgtwf-JtD4B8aln_f4Q" target="_blank" class="project-links">Project Report</a></li>
+            </ul>
+        </section>
+
+        <br>
+
+        <section>
+            <!-- Nerve Emulation Design Project (2023) -->
+            <h3><img class="icon" src="https://th.bing.com/th/id/R.1e5c57c010eaeb7adef8cb1128ae2c8d?rik=PNmGD31PCTwOAQ&pid=ImgRaw&r=0" alt="Nerve Icon"> Nerve Emulation Design Project (2023)</h3>
             <p>
-                Designed and developed a personal website showcasing my portfolio, projects, and professional experience. 
-                The website provides an interactive and responsive user interface using HTML, CSS, and JavaScript.
+                Collaborated with team members on the Nerve Emulation Design Project, focusing on emulating a nerve-generated action potential. 
+                The project aimed to create a suitably accurate signal mimicking a nerve impulse while considering factors such as cost, size, and power consumption. 
+                The design incorporated a combination of resistors, inductors, and capacitors, with specific attention to measuring the voltage across the capacitor. 
+                Details of the components, measurements, and simulations are documented in the lab report.
             </p>
-        </ul>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> HTML, CSS, JavaScript, Web Design, Frontend Development</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update this link with the actual URL -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://th.bing.com/th/id/R.e42cedba9941196598486f6d6db92d4c?rik=QLNOXCmIQafvCg&pid=ImgRaw&r=0" alt="Website Icon"><a href="https://ekruse09.github.io/index.html" target="_blank" class="project-links">Website</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </section>
-
-    <br>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Collaborative Design, LTSpice Simulation, Circuit Implementation, Measurement and Analysis</li>
+            </ul>
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtwdLS2aK_eljas8dQ?e=A2rQfO" target="_blank" class="project-links">Project Report</a></li>
+            </ul>
+        </section>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/OIP.YKvFSocKFQaoo-56XlWNMwHaHa?rs=1&pid=ImgDetMain" alt="Weather Icon"> Weather Application Design Project (2023 - present)
-        </h3>
-        <ul class="project-description">
-            <p> 
-                Collaborated with team members with the goal of creating a personalized travel weather application. 
-                The primary objectives were to automate weather predictions, enhance data management, and implement user-friendly features. 
-                This initiative addresses the challenges of accurate and accessible weather information, providing real-time forecasts and personalized travel planning features for a more tailored weather experience.
-            </p>
-        </ul>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Python, Backend Development, Database Management, User Interface Design, Collaborative Design, Personalized Application Development</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update this link with the actual URL -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://1drv.ms/p/s!ArCrb2sf9wrYgt1xcRXyvl_P_sqkzg" target="_blank" class="project-links">Final Preparation Presentation</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt1wcRXyvl_P_sqkzg" target="_blank" class="project-links">Functionality Specification Report</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/w/s!ArCrb2sf9wrYgt1vcRXyvl_P_sqkzg" target="_blank" class="project-links">Prior Art Report</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt1ucRXyvl_P_sqkzg" target="_blank" class="project-links">Technology Survey Report</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt1tcRXyvl_P_sqkzg" target="_blank" class="project-links">Requirement Specification Report</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://1drv.ms/p/s!ArCrb2sf9wrYgt1scRXyvl_P_sqkzg" target="_blank" class="project-links">Project Proposal Presentation</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt1rcRXyvl_P_sqkzg" target="_blank" class="project-links">Project Proposal Ideas</a></li>
-        </ul>
-    </section>
-
-    <br>
+        <br>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/R.50c28a69e0db8c3ad35b535483d469b2?rik=hozneXi3fPLd2Q&riu=http%3a%2f%2fgetdrawings.com%2fvectors%2fschedule-icon-vector-15.png&ehk=txYoZtmMn8RFoiU6MTOQr6z6hmIrGJfdKbHsn9cAttk%3d&risl=&pid=ImgRaw&r=0" alt="Schedule Icon"> TA Scheduling Application (2023)
-        </h3>
-        <ul class="project-description">
-            <p> Contributed significantly to the backend Python development and testing in a collaborative project focused on creating a TA scheduling application. 
-                The goal was to automate course assignments, enhance contact information management, and implement role-based access controls.
-                The TA scheduling app initiative addresses the challenges of managing graduate student TAs, their course assignments, and contact information. 
-            </p>
-        </ul>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Python, Backend Development, Database Management, Role-Based Access Control, Collaborative Design</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update this link with the actual URL -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/28/28884.png" alt="Python Document Icon"><a href="https://1drv.ms/f/s!ArCrb2sf9wrYgt0XBgKF9-cYCfCRxg" target="_blank" class="project-links">Our Code</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://docs.google.com/document/d/e/2PACX-1vTtRCyqY91F9t5XtCBjFXYlejLXw52jh1fBhTlQdfhJuMpo1TrxA267nvzoltjTDI9mIWEg7CZVH4Rh/pub" target="_blank" class="project-links">Project Description</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt0VBgKF9-cYCfCRxg" target="_blank" class="project-links">Design Document</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt0WBgKF9-cYCfCRxg" target="_blank" class="project-links">Project Backlog</a></li>
-        </ul>
-    </section>
-
-    <br>
-    
-    <section>
-        <h3>
-            <img class="icon" src="https://cdn0.iconfinder.com/data/icons/construction-2-22/65/65-4096.png" alt="Safety Light Icon"> LED Safety Light Design Project (2023)
-        </h3>
-        <ul class="project-description">
+        <section>
+            <!-- Bandpass Filter Design Project (2023) -->
+            <h3><img class="icon" src="https://th.bing.com/th/id/OIP.vS6g86_Cjg8Y4xSL4u_BMQAAAA?rs=1&pid=ImgDetMain" alt="Filter Icon"> Bandpass Filter Design Project (2023)</h3>
             <p>
-                Collaborated on the engineering of an analog circuit with peers, creating a safety light that blinked an LED at a specific duty cycle in light and activated fully at night. 
-                The goal was to design a light sensor switch with a blinking LED circuit indicator, considering factors such as cost, size, and power efficiency. 
-                The design process involved creating an astable multivibrator circuit, adjusting resistors and capacitors to control duty cycle and blinking frequency, and addressing challenges like achieving the required minimum current output.
-                The project showcased strengths and weaknesses in real-life applications. While the astable multivibrator offered a cost-effective and reliable solution, challenges such as the need for specific component values and the dependence on positive feedback were identified. 
-                The design demonstrated the application of knowledge in a practical scenario, providing a viable solution for an Emergency Super Safety Light Switch.
+                Collaborated with team members on the Bandpass Filter Design Project to create a circuit addressing the needs of the home healthcare network. 
+                The objective was to develop a bandpass filter allowing effective transmission of signals close to 500kHz while blocking frequencies outside the range of 460kHz to 530kHz. 
+                The project focused on utilizing components available in our lab kits to design an RLC circuit. We employed LTSpice for initial simulation, confirming the circuit's functionality and subsequently implemented it on a breadboard for practical testing. 
+                The project involved extensive measurements, calculations, and analysis of results, with a specific emphasis on meeting power consumption constraints below 5mW.
             </p>
-        </ul>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Collaborative Design, Analog Circuit Design, Component Analysis, LTSpice Simulation, PCB Design</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update these links with actual URLs -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/w/s!ArCrb2sf9wrYgtwf-JtD4B8aln_f4Q" target="_blank" class="project-links">Project Report</a></li>
-        </ul>
-    </section>
-
-    <br>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Collaborative Design, LTSpice Simulation, Circuit Implementation, Measurement and Analysis</li>
+            </ul>
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtweeUf9Xl2QDeLASQ?e=H1oHPO" target="_blank" class="project-links">Project Report</a></li>
+            </ul>
+        </section>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/R.1e5c57c010eaeb7adef8cb1128ae2c8d?rik=PNmGD31PCTwOAQ&pid=ImgRaw&r=0" alt="Nerve Icon"> Nerve Emulation Design Project (2023)
-        </h3>
-        <p>
-            Collaborated with team members on the Nerve Emulation Design Project, focusing on emulating a nerve-generated action potential. 
-            The project aimed to create a suitably accurate signal mimicking a nerve impulse while considering factors such as cost, size, and power consumption. 
-            The design incorporated a combination of resistors, inductors, and capacitors, with specific attention to measuring the voltage across the capacitor. 
-            Details of the components, measurements, and simulations are documented in the lab report.
-        </p>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Collaborative Design, LTSpice Simulation, Circuit Implementation, Measurement and Analysis</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update these links with actual URLs -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtwdLS2aK_eljas8dQ?e=A2rQfO" target="_blank" class="project-links">Project Report</a></li>
-        </ul>
-    </section>
-
-    <br>
+        <br>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/OIP.vS6g86_Cjg8Y4xSL4u_BMQAAAA?rs=1&pid=ImgDetMain" alt="Filter Icon"> Bandpass Filter Design Project (2023)
-        </h3>
-        <p>
-            Collaborated with team members on the Bandpass Filter Design Project to create a circuit addressing the needs of the home healthcare network. 
-            The objective was to develop a bandpass filter allowing effective transmission of signals close to 500kHz while blocking frequencies outside the range of 460kHz to 530kHz. 
-            The project focused on utilizing components available in our lab kits to design an RLC circuit. We employed LTSpice for initial simulation, confirming the circuit's functionality and subsequently implemented it on a breadboard for practical testing. 
-            The project involved extensive measurements, calculations, and analysis of results, with a specific emphasis on meeting power consumption constraints below 5mW.
-        </p>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Collaborative Design, LTSpice Simulation, Circuit Implementation, Measurement and Analysis</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update these links with actual URLs -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtweeUf9Xl2QDeLASQ?e=H1oHPO" target="_blank" class="project-links">Project Report</a></li>
-        </ul>
-    </section>
-
-    <br>
+        <section>
+            <!-- Microprocessor RSP Project (2023) -->
+            <h3><img class="icon" src="https://th.bing.com/th/id/R.f9d186e319340a9aad96e10daefb6064?rik=ikW3orzv7WfAXw&pid=ImgRaw&r=0" alt="Processor Icon"> Microprocessor RSP Project (2023)</h3>
+            <p>
+                Collaborated with a lab partner to construct a "Really Small Processor" (RSP) on a breadboard, featuring an Arithmetic Logic Unit (ALU) and 2 registers. 
+                This microprocessor, though simple with only twelve instructions, served as a hands-on learning experience to delve into the fundamentals of microprocessor design. 
+                The project aimed to comprehend the basic building blocks of a microprocessor, including registers, buses, and logic circuits. 
+                Special emphasis was placed on understanding the role of buses, latches, and tri-state logic, along with the fundamental Latch-Logic-Latch cycle integral to processor design. 
+                Additionally, the RSP functioned as an I/O subsystem interfaced with a commercial microprocessor, offering practical experimentation and programming through assembly code.
+            </p>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Microprocessor Design, Breadboard Construction, Assembly Code Programming, Collaborative Learning</li>
+            </ul>
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtwgiExRwWWVTHWkZg" target="_blank" class="project-links">Lab Manual</a></li>
+            </ul>
+        </section>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/R.f9d186e319340a9aad96e10daefb6064?rik=ikW3orzv7WfAXw&pid=ImgRaw&r=0" alt="Processor Icon"> Microprocessor RSP Project (2023)
-        </h3>
-        <p>
-            Collaborated with a lab partner to construct a "Really Small Processor" (RSP) on a breadboard, featuring an Arithmetic Logic Unit (ALU) and 2 registers. 
-            This microprocessor, though simple with only twelve instructions, served as a hands-on learning experience to delve into the fundamentals of microprocessor design. 
-            The project aimed to comprehend the basic building blocks of a microprocessor, including registers, buses, and logic circuits. 
-            Special emphasis was placed on understanding the role of buses, latches, and tri-state logic, along with the fundamental Latch-Logic-Latch cycle integral to processor design. 
-            Additionally, the RSP functioned as an I/O subsystem interfaced with a commercial microprocessor, offering practical experimentation and programming through assembly code.
-        </p>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Microprocessor Design, Breadboard Construction, Assembly Code Programming, Collaborative Learning</li>
-        </ul>
-    
-        <ul class="project-links">
-            <!-- Update these links with actual URLs -->
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Document Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgtwgiExRwWWVTHWkZg" target="_blank" class="project-links">Lab Manual</a></li>
-        </ul>
-    </section>
-
-    <br>
-        
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/R.4aad089a75f42e6fa2cac30f12b69871?rik=OFw%2bp2r1tljczw&pid=ImgRaw&r=0" alt="Stock Icon"> Moving Average Stock Filter Project (2022)
-        </h3>
-        <p>
-            Explored the practical application of a moving average (MA) filter on stock prices. 
-            The project focused on applying theoretical concepts from the EE310 course to real-world digital signal processing applications. 
-            Leveraging MATLAB, I implemented a moving average filter on historical stock data, with a specific focus on analyzing Google's (GOOG) stock as a case study. 
-            The project involved in-depth signal analysis, examining how the MA filter smoothed input signals, attenuated high-frequency components, and served as a low-pass filter to pass low-frequency components. 
-            The findings and observations were documented in a comprehensive report.
-        </p>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> MATLAB Programming, Signal Processing, Data Analysis, Report Writing</li>
-        </ul>
-    
-        <ul class="project-links">
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Report Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt0Sfzr_aQBnJtn4dA?e=FVuBbm" target="_blank" class="project-links">Project Report</a></li>
-        </ul>
-    </section>
-
-    <br>
+        <br>
             
-    <section>
-        <h3>
-            <img class="icon" src="https://cdn0.iconfinder.com/data/icons/news-literacy-filled-outline/64/misinformation-fake_news-consider-alert-report-warning-512.png" alt="Misinformation Icon"> Misinformation Project (2022)
-        </h3>
-        <p>
-            Collaborated with team members to investigate the role of technology in the propagation of misinformation during Russia's invasion of Ukraine in 2022. 
-            The project explored the intersection of hybrid warfare, armed conflict, and information warfare, delving into how Russia leveraged misinformation tactics both before and after the invasion. 
-            The team conducted interviews with key stakeholders, including experts on information warfare, individuals affected by misinformation, and those involved in countering misinformation efforts. 
-            The analysis focused on the social and ethical implications of using technology to spread misinformation and its impact on global perceptions of the conflict. 
-            The findings were presented through a comprehensive website developed in a long-form article format, incorporating research, interviews, and a compelling narrative.
-        </p>
-    
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Project Management, Research, Interviewing, Content Analysis, Ethical Analysis</li>
-        </ul>
-    
-        <ul class="project-links">
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://th.bing.com/th/id/R.e42cedba9941196598486f6d6db92d4c?rik=QLNOXCmIQafvCg&pid=ImgRaw&r=0" alt="Website Icon"><a href="https://final-project-beta-nine.vercel.app/" target="_blank" class="project-links">Project Website</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://docs.google.com/presentation/d/1DtVkQAco6VVXftlLfdxCx5FRRyE-vPz_8fC94bwRBPI/edit?usp=sharing" target="_blank" class="project-links">Our Presentation</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://docs.google.com/presentation/d/16dwFarAqXYUR22zruF_OcDTHDiZTcPMU/edit#slide=id.p1" target="_blank" class="project-links">Presentation by an Interviewee: Tetiana Matychak</a></li>
-        </ul>
-    </section>
-
-    <br>
+        <section>
+            <!-- Moving Average Stock Filter Project (2022) -->
+            <h3><img class="icon" src="https://th.bing.com/th/id/R.4aad089a75f42e6fa2cac30f12b69871?rik=OFw%2bp2r1tljczw&pid=ImgRaw&r=0" alt="Stock Icon"> Moving Average Stock Filter Project (2022)</h3>
+            <p>
+                Explored the practical application of a moving average (MA) filter on stock prices. 
+                The project focused on applying theoretical concepts from the EE310 course to real-world digital signal processing applications. 
+                Leveraging MATLAB, I implemented a moving average filter on historical stock data, with a specific focus on analyzing Google's (GOOG) stock as a case study. 
+                The project involved in-depth signal analysis, examining how the MA filter smoothed input signals, attenuated high-frequency components, and served as a low-pass filter to pass low-frequency components. 
+                The findings and observations were documented in a comprehensive report.
+            </p>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> MATLAB Programming, Signal Processing, Data Analysis, Report Writing</li>
+            </ul>
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/422/489/original/vector-documents-icon.jpg" alt="Report Icon"><a href="https://1drv.ms/b/s!ArCrb2sf9wrYgt0Sfzr_aQBnJtn4dA?e=FVuBbm" target="_blank" class="project-links">Project Report</a></li>
+            </ul>
+        </section>
         
-    <section>
-        <h3>
-            <img class="icon" src="https://th.bing.com/th/id/OIP.EpPm7Fk8ygJKjFg50pTbeQHaHa?rs=1&pid=ImgDetMain" alt="Minesweeper Icon"> Minesweeper Final Project (2022)
-        </h3>
-        <p> Designed and implemented a custom version of the classic game "Minesweeper" as the final project in the Intermediate Computer Programming course.
-            For this, the Java programming language was utilized to create an interactive and challenging Minesweeper game, featuring a graphical user interface and dynamic mine placement.
-            I implemented functionalities such as mine flagging, cell exposure, and a responsive grid layout to provide an engaging experience for the user.
-            While doing so, I utilized principles of object-oriented programming to organize and structure the codebase which enhanced code readability and maintainability.
-        </p>
+        <br>
         
-        <ul class="project-skills">
-            <li><strong>Skills Utilized:</strong> Java Programming, Object-Oriented Programming, Algorithm Implementation, Problem Solving</li>
-        </ul>
+        <section>
+            <!-- Misinformation Project (2022) -->
+            <h3><img class="icon" src="https://cdn0.iconfinder.com/data/icons/news-literacy-filled-outline/64/misinformation-fake_news-consider-alert-report-warning-512.png" alt="Misinformation Icon"> Misinformation Project (2022)</h3>
+            <p>
+                Collaborated with team members to investigate the role of technology in the propagation of misinformation during Russia's invasion of Ukraine in 2022. 
+                The project explored the intersection of hybrid warfare, armed conflict, and information warfare, delving into how Russia leveraged misinformation tactics both before and after the invasion. 
+                The team conducted interviews with key stakeholders, including experts on information warfare, individuals affected by misinformation, and those involved in countering misinformation efforts. 
+                The analysis focused on the social and ethical implications of using technology to spread misinformation and its impact on global perceptions of the conflict. 
+                The findings were presented through a comprehensive website developed in a long-form article format, incorporating research, interviews, and a compelling narrative.
+            </p>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Project Management, Research, Interviewing, Content Analysis, Ethical Analysis</li>
+            </ul>
+            <ul class="project-links">
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://th.bing.com/th/id/R.e42cedba9941196598486f6d6db92d4c?rik=QLNOXCmIQafvCg&pid=ImgRaw&r=0" alt="Website Icon"><a href="https://final-project-beta-nine.vercel.app/" target="_blank" class="project-links">Project Website</a></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://docs.google.com/presentation/d/1DtVkQAco6VVXftlLfdxCx5FRRyE-vPz_8fC94bwRBPI/edit?usp=sharing" target="_blank" class="project-links">Our Presentation</a></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/331/425/original/vector-presentation-icon.jpg" alt="Presentation Icon"><a href="https://docs.google.com/presentation/d/16dwFarAqXYUR22zruF_OcDTHDiZTcPMU/edit#slide=id.p1" target="_blank" class="project-links">Presentation by an Interviewee: Tetiana Matychak</a></li>
+            </ul>
+        </section>
         
-        <ul>
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://cdn2.iconfinder.com/data/icons/technology-devices-12/512/Java_code_file_java-512.png" alt="Java Code Icon"><a href="https://1drv.ms/f/s!ArCrb2sf9wrYgtwctZmjvpvODliBwA" target="_blank" class="project-links">My Code</a></li>
-        </ul>
+        <br>
+        
+        <section>
+            <!-- Minesweeper Final Project (2022) -->
+            <h3><img class="icon" src="https://th.bing.com/th/id/OIP.EpPm7Fk8ygJKjFg50pTbeQHaHa?rs=1&pid=ImgDetMain" alt="Minesweeper Icon"> Minesweeper Final Project (2022)</h3>
+            <p>
+                Designed and implemented a custom version of the classic game "Minesweeper" as the final project in the Intermediate Computer Programming course.
+                For this, the Java programming language was utilized to create an interactive and challenging Minesweeper game, featuring a graphical user interface and dynamic mine placement.
+                I implemented functionalities such as mine flagging, cell exposure, and a responsive grid layout to provide an engaging experience for the user.
+                While doing so, I utilized principles of object-oriented programming to organize and structure the codebase which enhanced code readability and maintainability.
+            </p>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Java Programming, Object-Oriented Programming, Algorithm Implementation, Problem Solving</li>
+            </ul>
+            <ul>
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://cdn2.iconfinder.com/data/icons/technology-devices-12/512/Java_code_file_java-512.png" alt="Java Code Icon"><a href="https://1drv.ms/f/s!ArCrb2sf9wrYgtwctZmjvpvODliBwA" target="_blank" class="project-links">My Code</a></li>
+            </ul>
+        </section>
+        
+        <br>
+        
+        <section>
+            <!-- Mental Health Awareness Service-Learning Project (2020) -->
+            <h3><img class="icon" src="https://www.fshdsociety.org/wp-content/uploads/2020/07/Icon_Mental-Health.png" alt="Mental Health Icon"> Mental Health Awareness Service-Learning Project (2020)</h3>
+            <p>
+                Worked with four dedicated classmates, orchestrating a virtual concert at UW-Eau Claire to combat mental health stigma.
+                As part of the Women of the Civil Rights Movement class, our project focused on fostering positive change, addressing the often-overlooked realm of mental well-being on campus.
+                We curated a musical showcase featuring local talent, culminating in a November 18 event on Twitch that not only entertained but also initiated open dialogue about mental health challenges.
+                Our goal was to break the silence surrounding mental health, emphasizing that it's okay to struggle, and as a community, we face these challenges together.
+            </p>
+            <ul class="project-skills">
+                <li><strong>Skills Utilized:</strong> Event Coordination, Project Planning, Community Engagement, Collaboration, Public Speaking</li>
+            </ul>
+            <ul>
+                <li><strong>Project Links: </strong></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/002/486/557/original/article-icon-vector.jpg" alt="Article Icon"><a href="https://www.uwec.edu/news/news/students-create-virtual-event-to-raise-awarenss-about-mental-health-campus-resources-4457/" target="_blank" class="project-links">Students Create Virtual Event to Raise Awareness about Mental Health, Campus Resources</a></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/002/486/557/original/article-icon-vector.jpg" alt="Article Icon"><a href="https://www.weau.com/2020/11/17/uwec-students-create-a-virtual-mental-health-awareness-concert-to-address-stigma-on-campus/" target="_blank" class="project-links">UWEC Students Create Virtual Mental Health Awareness Concerts</a></li>
+                <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/644/657/original/vector-video-icon-symbol-sign.jpg" alt="Video Icon"><a href="https://www.youtube.com/watch?v=iEI_kXRFKRg" target="_blank" class="project-links">Virtual Mental Health Awareness Concert at UWEC</a></li>
+            </ul>
+        </section>
     </section>
-
-    <br>
-
-    <section>
-        <h3>
-            <img class="icon" src="https://www.fshdsociety.org/wp-content/uploads/2020/07/Icon_Mental-Health.png" alt="Mental Health Icon"> Mental Health Awareness Service-Learning Project (2020)
-        </h3>
-        <p> Worked with four dedicated classmates, orchestrating a virtual concert at UW-Eau Claire to combat mental health stigma. 
-            As part of the Women of the Civil Rights Movement class, our project focused on fostering positive change, addressing the often-overlooked realm of mental well-being on campus. 
-            We curated a musical showcase featuring local talent, culminating in a November 18 event on Twitch that not only entertained but also initiated open dialogue about mental health challenges. 
-            Our goal was to break the silence surrounding mental health, emphasizing that it's okay to struggle, and as a community, we face these challenges together.
-        </p>
-
-        <ul class="project-skills">
-            <li> <strong>Skills Utilized:</strong> Event Coordination, Project Planning, Community Engagement, Collaboration, Public Speaking</li>
-        </ul>
-
-        <ul>
-            <li><strong>Project Links: </strong></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/002/486/557/original/article-icon-vector.jpg" alt="Article Icon"><a href="https://www.uwec.edu/news/news/students-create-virtual-event-to-raise-awarenss-about-mental-health-campus-resources-4457/" target="_blank" class="project-links"> Students Create Virtual Event to Raise Awareness about Mental Health, Campus Resources</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/002/486/557/original/article-icon-vector.jpg" alt="Article Icon"><a href="https://www.weau.com/2020/11/17/uwec-students-create-a-virtual-mental-health-awareness-concert-to-address-stigma-on-campus/" target="_blank" class="project-links"> UWEC Students Create Virtual Mental Health Awareness Concerts</a></li>
-            <li><img class="icon" src="https://static.vecteezy.com/system/resources/previews/000/644/657/original/vector-video-icon-symbol-sign.jpg" alt="Video Icon"><a href="https://www.youtube.com/watch?v=iEI_kXRFKRg" target="_blank" class="project-links"> Virtual Mental Health Awareness Concert at UWEC</a></li>
-        </ul>
-    </section>
-
-    <br>
     
-    <!-- Add details for other projects similarly -->
-</section>
-
     <!-- Back button in the top left corner -->
     <p class="back-button"><a href="index.html">&lt; Back to Homepage</a></p>
-
+    
     <!-- Clearfix to prevent content overlap -->
     <div class="clearfix"></div>
     
     <footer>
         <p>&copy; 2023 Elijah Jordan Kruse</p>
     </footer>
-</body>
+    </body>
 </html>
