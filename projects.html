@@ -85,6 +85,13 @@
             align-items: center; /* Align items vertically */
         }
 
+        /* Back button styles */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 10px; /* Add some spacing below the back button */
+            margin-top: -20px; /* Adjust the top margin to move it up */
+        }
+
         /* Clearfix to prevent content overlap */
         .clearfix::after {
             content: "";
@@ -157,6 +164,12 @@
         </ul>
     </section>
 
+    <!-- Back button in the top left corner -->
+    <p class="back-button"><a href="index.html">&lt; Back to Homepage</a></p>
+
+    <!-- Clearfix to prevent content overlap -->
+    <div class="clearfix"></div>
+    
     <footer>
         <p>&copy; 2023 Elijah Jordan Kruse</p>
     </footer>
